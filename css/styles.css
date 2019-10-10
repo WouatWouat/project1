@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+
+.logo {
+    padding-top: 18px;
+    padding-left: 152px;
+    height: 64px;
+    width: auto;
+}
+header {
+    display: flex;   
+    justify-content: space-between;
+    height: 100px;
+}
+nav > ul{
+    display: flex;
+    margin-top: 0;
+    margin-right: 162px;
+    list-style-type: none;
+    align-items: flex-end;
+    font-size: 14px;
+}
+nav > ul > li{
+    width: 72px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #555555; 
+}
+
+.selected{
+    padding-top: 50px;
+    margin-top: 0;
+    border-top: solid;
+    border-color: #5cadd3;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.slider{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.slider > img{
+    width: 100%;
+}
+
+.slider > div {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: white;
+}
+
+.slider >div > h1{
+    font-size : 26px;
+}
+
+.slider > div > h1 > strong{
+    color : #5cadd3;
+}
+
+.slider > div > h3{
+    font-size : 12px;
+}
+
+.slider > div > button {
+    background : #5cadd3;
+    color : white;
+    border-radius: 4px;
+    border: none;
+    width : 125px;
+    height: 48px;
+    font-size : 16px;
+}
