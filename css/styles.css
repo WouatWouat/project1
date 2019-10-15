@@ -2,19 +2,23 @@
 
 .logo {
     padding-top: 18px;
-    padding-left: 152px;
-    height: 64px;
-    width: auto;
+    padding-left: 15%;
+    height: 57px;
+    width: 261px;
 }
 header {
     display: flex;   
     justify-content: space-between;
     height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    margin : auto;
 }
 nav > ul{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     margin-top: 0;
-    margin-right: 162px;
+    margin-right: 15%;
     list-style-type: none;
     align-items: flex-end;
     font-size: 14px;
@@ -44,7 +48,9 @@ nav > ul > li > a {
 }
 
 .slider > img{
-    width: 100%;
+    max-width: 1600px;
+    display: block;
+    margin: auto;
 }
 
 .slider > div {
@@ -63,7 +69,7 @@ nav > ul > li > a {
     color : #5cadd3;
 }
 
-.slider > div > h3{
+.slider > div > h2{
     font-size : 12px;
 }
 
