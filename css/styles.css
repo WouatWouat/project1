@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 
+html, body {
+    height : 100%;
+    width: 100%;
+}
+
 .logo {
     padding-top: 18px;
     padding-left: 15%;
@@ -50,15 +55,28 @@ nav > ul > li > a {
 .slider{
     font-family: 'Roboto', sans-serif;
     position: relative;
+    display : block;
+    max-width: 1600px;
+    max-height : 550px;
+    height : 100%;
+    width: 100%;
+    margin: auto;
+
 }
 
-.slider > img{
+.slider > figure{
     max-width: 1600px;
+    width: 100%;
     display: block;
     margin: auto;
+
 }
 
-.slider > div {
+.slider_img > img{
+    width: 100%;
+}
+
+.slider > figure > figcaption {
     width: 30%;
     position: absolute;
     top: 30%;
@@ -66,19 +84,19 @@ nav > ul > li > a {
     color: white;
 }
 
-.slider >div > h1{
+.slider > figure > figcaption > h1{
     font-size : 26px;
 }
 
-.slider > div > h1 > strong{
+.slider > figure > figcaption > h1 > strong{
     color : #5cadd3;
 }
 
-.slider > div > h2{
+.slider > figure > figcaption > h2{
     font-size : 12px;
 }
 
-.slider > div > button {
+.slider > figure > figcaption > button {
     background : #5cadd3;
     color : white;
     border-radius: 4px;
@@ -88,6 +106,61 @@ nav > ul > li > a {
     font-size : 16px;
 }
 
-button:hover {
+.slider > figure > figcaption > button:hover {
     cursor: pointer;
+    background : white;
+    color :  #5cadd3;
+}
+
+.slider_img{
+    position: absolute;
+    width : 100%;
+    max-height : 550px;
+    max-width: 1600px;
+    z-index : -1;
+}
+
+#i1, #i2{
+    display: none;
+}
+
+.pre, .nxt{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    background: rgba(100,100,100,.4);
+    z-index: 99;
+    cursor : pointer;
+}
+
+.pre {
+    left: 0;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.pre > i {
+    color : white;
+    font-size: 30px;
+    margin-top : 35px;
+    margin-left : 10px;
+}
+
+
+.nxt {
+    right: 0;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.nxt > i {
+    color : white;
+    font-size: 30px;
+    margin-top : 35px;
+    margin-left : 15px;
+}
+
+#i1:checked ~ #first, #i2:checked ~ #second{
+    z-index: 9;
 }

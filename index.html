@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <script src="https://kit.fontawesome.com/68728a6433.js" crossorigin="anonymous"></script>
   <header>
     <img class="logo" src="img/logo.png" alt="Logo de WEBAGENCY">
     <nav>
@@ -24,12 +25,28 @@
     </nav>
   </header>
   <article class="slider">
-    <img  src="img/bg1.jpg" alt="Jeu d'enfant">
-    <div>
-      <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-      <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h2>
-      <button onclick="window.location.href='#'">Plus d'infos</button> 
-    </div>
+    <input type="radio" name="images" id="i1" checked>
+    <input type="radio" name="images" id="i2">
+    <figure class="slider_img" id="first">
+      <img  src="img/bg1.jpg" alt="Jeu d'enfant">
+      <label for="i2" class="pre"><i class="fas fa-chevron-left"></i></label>
+      <label for="i2" class="nxt"><i class="fas fa-chevron-right"></i></label>
+      <figcaption>
+       <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+       <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser 1 !</h2>
+        <button onclick="window.location.href='#'">Plus d'infos</button> 
+      </figcaption>
+    </figure>
+    <figure class="slider_img" id="second">
+        <img  src="img/bg2.jpg" alt="Jeu d'enfant">
+        <label for="i1" class="pre"><i class="fas fa-chevron-left"></i></label>
+        <label for="i1" class="nxt"><i class="fas fa-chevron-right"></i></label>
+        <figcaption>
+         <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+         <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser 2 !</h2>
+          <button onclick="window.location.href='#'">Plus d'infos</button> 
+        </figcaption>
+      </figure>
   </article>
 </body>
 </html>
