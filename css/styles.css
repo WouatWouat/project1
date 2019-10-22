@@ -24,22 +24,27 @@ nav > ul{
     font-size: 14px;
 }
 nav > ul > li{
-    width: 72px;
-    margin-bottom: 50px;
+    width: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     color: #555555; 
+    border-top: solid;
+    border-color:white;
+    height: 100%;
 }
 
-.selected{
-    padding-top: 50px;
-    margin-top: 0;
+nav > ul > li:hover{
     border-top: solid;
     border-color: #5cadd3;
+    cursor: pointer;
 }
 
 nav > ul > li > a {
     text-decoration: none;
     color:inherit;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .slider{
@@ -81,4 +86,8 @@ nav > ul > li > a {
     width : 125px;
     height: 48px;
     font-size : 16px;
+}
+
+button:hover {
+    cursor: pointer;
 }
