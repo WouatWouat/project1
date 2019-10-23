@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+
 
 html, body {
     height : 100%;
     width: 100%;
+    margin: 0 0;
 }
 
 .logo {
@@ -17,8 +19,20 @@ header {
     height: 100px;
     max-width: 1600px;
     width: 100%;
-    margin : auto;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99999;
+    background: white;
 }
+
+#accueil{
+    margin-top:100px;
+}
+
 nav > ul{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -163,4 +177,57 @@ nav > ul > li > a {
 
 #i1:checked ~ #first, #i2:checked ~ #second{
     z-index: 9;
+}
+
+#services{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#services > .subtitle{
+    margin: auto;
+    text-align:center;
+    max-width: 800px;
+}
+
+#services > .subtitle > h1{
+    font-size: 50px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#services > .subtitle > p{
+    margin-top : 20px;
+}
+
+#services > .content{
+    display : flex;
+}
+
+.spliter{
+    display: flex;
+    margin: auto;
+}
+
+.leftsplit, .rightsplit{
+    height: 1px;
+    width: 100px;
+    background: black;
+    margin-top:10px;
+    margin: auto;
+}
+
+.leftsplit{
+    margin-right : 5px;
+}
+.rightsplit{
+    margin-left : 5px;
+}
+
+.middlesplit{
+    height: 20px;
+    width: 20px;
+    background: #5cadd3;
+    border-radius: 10px;
 }

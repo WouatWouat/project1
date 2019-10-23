@@ -1,5 +1,6 @@
 <!doctype html>
 
+
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -9,22 +10,22 @@
   <meta name="author" content="Florian Lambert">
 
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/68728a6433.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="https://kit.fontawesome.com/68728a6433.js" crossorigin="anonymous"></script>
   <header>
     <img class="logo" src="img/logo.png" alt="Logo de WEBAGENCY">
     <nav>
       <ul>
-        <li class="selected"><a href="#">Accueil</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="www.google.fr">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <article class="slider">
+  <article class="slider" id="accueil">
     <input type="radio" name="images" id="i1" checked>
     <input type="radio" name="images" id="i2">
     <figure class="slider_img" id="first">
@@ -47,6 +48,38 @@
           <button onclick="window.location.href='#'">Plus d'infos</button> 
         </figcaption>
       </figure>
+  </article>
+  <article id="services">
+    <div class="subtitle">
+      <h1>NOS SERVICES</h1>
+      <div class="spliter">
+        <div class="leftsplit"></div>
+        <div class="middlesplit"></div>
+        <div class="rightsplit"></div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+    </div>
+    <div class="content">
+      <div>
+        <img src="img/main-feature.png" alt="exemple de projet">
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h2>UX design</h2>
+            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.
+          </li>
+          <li>
+            <h2>UI design</h2>
+            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.
+          </li>
+          <li>
+            <h2>SEO</h2>
+            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.
+          </li>
+        </ul>
+      </div>
+    </div>
   </article>
 </body>
 </html>
