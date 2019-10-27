@@ -20,12 +20,12 @@
       <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <article class="slider" id="accueil">
+  <section class="slider" id="accueil">
     <input type="radio" name="images" id="i1" checked>
     <input type="radio" name="images" id="i2">
     <figure class="slider_img" id="first">
@@ -34,9 +34,10 @@
       <label for="i2" class="nxt"><i class="fas fa-chevron-right"></i></label>
       <figcaption>
        <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-       <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser 1 !</h2>
+       <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser!</h2>
         <button onclick="window.location.href='#'">Plus d'infos</button> 
       </figcaption>
+      <div class="loading_bar"></div>
     </figure>
     <figure class="slider_img" id="second">
         <img  src="img/bg2.jpg" alt="Jeu d'enfant">
@@ -44,12 +45,13 @@
         <label for="i1" class="nxt"><i class="fas fa-chevron-right"></i></label>
         <figcaption>
          <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-         <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser 2 !</h2>
+         <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser!</h2>
           <button onclick="window.location.href='#'">Plus d'infos</button> 
         </figcaption>
+        <div class="loading_bar"></div>
       </figure>
-  </article>
-  <article id="services">
+  </section>
+  <section id="services">
     <div class="subtitle">
       <h1>NOS SERVICES</h1>
       <div class="spliter">
@@ -57,29 +59,52 @@
         <div class="middlesplit"></div>
         <div class="rightsplit"></div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <p>Vous avez un projet? Nous avons le savoir faire. Nous vous aiderons à atteindre vos clients.</p>
     </div>
     <div class="content">
-      <div>
+      <div id="servicePicture">
         <img src="img/main-feature.png" alt="exemple de projet">
       </div>
-      <div>
+      <div id="serviceContent">
         <ul>
           <li>
+            <div id="uxDesign" class="servicesLogo"><i class="fas fa-chart-line"></i><div class="blueround"></div></div>
             <h2>UX design</h2>
-            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.
+            Des produits dont on a envie de se servir.
           </li>
           <li>
+            <div id="uiDesign" class="servicesLogo"><i class="fas fa-cubes"></i><div class="blueround"></div></div>
             <h2>UI design</h2>
-            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.
+            Des produits toujours plus accessible et facile à prendre en main pour tout type de support
           </li>
           <li>
+            <div id="seo" class="servicesLogo"><i class="fas fa-chart-pie"></i><div class="blueround"></div></div>
             <h2>SEO</h2>
-            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna incididunt ut labore aliqua.
+            Des produits bien referencé pour atteidre vos clients.
           </li>
         </ul>
       </div>
     </div>
-  </article>
+  </section>
+  <section id="projects">
+
+  </section>
+  <section id="contact">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.1124246303511!2d2.34896460707269!3d48.872990017921005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1442c049bb%3A0x30a290491097f07f!2sWebAgency!5e0!3m2!1sfr!2sfr!4v1572185213302!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div id="contactInfo">
+        <div id="contactDiv">
+        <h1>Contact Info</h1>
+        <p><strong>WebAgency SAS</strong></p>
+        <p>25 rue d'Hauteville 75010 Paris</p>
+        <p>Tel : 01 02 03 04 05</p>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message"></textarea>
+        <button>Send Message</button>
+        </div>
+      </div>
+      
+    </section>
 </body>
 </html>
