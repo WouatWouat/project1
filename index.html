@@ -19,8 +19,8 @@
     <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#servicesnav">Services</a></li>
+        <li><a href="#projectsnav">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -51,9 +51,10 @@
         <div class="loading_bar"></div>
       </figure>
   </section>
+  <div id="servicesnav"></div>
   <section id="services">
-    <div class="subtitle">
-      <h1>NOS SERVICES</h1>
+    <div class="subtitle" id="servicesnav">
+      <h1 >NOS SERVICES</h1>
       <div class="spliter">
         <div class="leftsplit"></div>
         <div class="middlesplit"></div>
@@ -87,7 +88,108 @@
     </div>
   </section>
   <section id="projects">
-
+      <div class="subtitle" id="projectsnav">
+          <h1>NOS PROJETS</h1>
+          <div class="spliter">
+            <div class="leftsplit"></div>
+            <div class="middlesplit"></div>
+            <div class="rightsplit"></div>
+          </div>
+          <p>Voici quelques exemples de nos réalisations</p>
+        </div>
+       
+        <div id="widget">
+          <input type="radio" checked="checked" id="allwork" name="projets" value="allwork">
+          <input type="radio" id="creative" name="projets" value="creative">
+          <input type="radio" id="corporate" name="projets" value="corporate">
+          <input type="radio" id="portfolio" name="projets" value="portfolio">
+          <div id="selector">
+              <div>
+                <label for="allwork" id="first" class="allck">All Works</label>
+                <i class="fas fa-caret-down firsti"></i>
+              </div>
+              <div>
+                  <label for="creative" id="second" class="select">Creative</label>
+                  <i class="fas fa-caret-down secondi"></i>
+              </div>
+              <div>
+                  
+                  <label for="corporate" id="third" class="select">Corporate</label>
+                  <i class="fas fa-caret-down thirdi"></i>
+              </div>
+              <div>
+                  
+                  <label for="portfolio" id="last" class="select">Portfolio</label>
+                  <i class="fas fa-caret-down lasti"></i>
+              </div>
+            </div>
+          <div id="pictures">
+          <figure class="all creative">
+            <img src="img/01.jpg">
+            <figcaption>
+              <h1>Une paire de lunettes</h1>
+              <p>Elle aussi un nez dingue!</p>
+              <div class="theeye"><i class="fas fa-eye"></i></div>
+            </figcaption>
+          </figure>
+          <figure class="all creative">
+              <img src="img/02.jpg">
+              <figcaption>
+                  <h1>Un lapin</h1>
+                  <p>Que tiens-il dans sa main?</p>
+                  <div class="theeye"><i class="fas fa-eye"></i></div>  
+              </figcaption>
+          </figure>
+          <figure class="all corporate portfolio">
+            <img src="img/03.jpg">
+            <figcaption>
+              <h1>Pompadour</h1>
+              <p>Bien evidement.</p>
+              <div class="theeye"><i class="fas fa-eye"></i></div>  
+            </figcaption>
+          </figure>
+          <figure class="all corporate creative">
+            <img src="img/04.jpg">
+              <figcaption>
+                  <h1>Un cahier</h1>
+                  <p>Ca a l'air serieux</p>
+                  <div class="theeye"><i class="fas fa-eye"></i></div>      
+              </figcaption>
+          </figure>
+          <figure class="all corporate">
+          <img src="img/05.jpg">
+            <figcaption>
+                <h1>Des sacs de courses</h1>
+                <p>Ca à l'air bien aussi</p>
+                <div class="theeye"><i class="fas fa-eye"></i></div>        
+            </figcaption>
+          </figure>
+          <figure class="all creative">
+            <img src="img/06.jpg">
+            <figcaption>
+                <h1>Le voyage</h1>
+                <p>C'est pas la destination qui compte.</p>
+                <div class="theeye"><i class="fas fa-eye"></i></div>          
+            </figcaption>
+          </figure>
+          <figure class="all creative portfolio"> 
+            <img src="img/07.jpg">
+            <figcaption>
+                <h1>Espaaaaaaaace</h1>
+                <p>I'm in space</p>
+                <div class="theeye"><i class="fas fa-eye"></i></div>            
+            </figcaption>
+          </figure>
+          <figure class="all portfolio">
+            <img src="img/08.jpg">
+              <figcaption>
+                  <h1>Du materiel</h1>
+                  <p>Quelle organisation</p>
+                  <div class="theeye"><i class="fas fa-eye"></i></div>              
+              </figcaption>
+          </figure>
+        </div>
+        </div>
   </section>
   <section id="contact">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.1124246303511!2d2.34896460707269!3d48.872990017921005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1442c049bb%3A0x30a290491097f07f!2sWebAgency!5e0!3m2!1sfr!2sfr!4v1572185213302!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
