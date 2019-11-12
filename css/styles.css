@@ -644,3 +644,20 @@ nav > ul > li > a {
     margin-top: 8px;
     margin-left: 7px;
 }
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    #pictures > figure {
+        flex : 0 0 25%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #pictures > figure {
+        flex : 0 0 33%;
+    }
+}
