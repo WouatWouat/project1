@@ -17,7 +17,14 @@
 <body>
   <header>
     <img class="logo" src="img/logo.png" onclick="window.location.href='#'"" alt="Logo de WEBAGENCY">
-    <nav>
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+    </label>
+    <nav id="nonMobile">
       <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#servicesnav">Services</a></li>
@@ -25,6 +32,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
   </header>
   <section class="slider" id="accueil">
     <input type="radio" name="images" id="i1" checked>
@@ -199,7 +207,6 @@
   <section id="contact">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.1124246303511!2d2.34896460707269!3d48.872990017921005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1442c049bb%3A0x30a290491097f07f!2sWebAgency!5e0!3m2!1sfr!2sfr!4v1572185213302!5m2!1sfr!2sfr"
        frameborder="0" allowfullscreen="" allowtransparency="true"></iframe>
-    <div id="filter"></div>
     <div id="contactInfo">
       <div id="contactDiv">
         <h4>Contact Info</h4>
