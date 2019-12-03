@@ -79,7 +79,7 @@ nav>ul>li>a {
 .slider>figure {
     max-width: 1600px;
     width: 100%;
-    display: block;
+    display: none;
     margin: auto;
 }
 
@@ -179,7 +179,8 @@ nav>ul>li>a {
 
 #i1:checked~#first,
 #i2:checked~#second {
-    z-index: 9;
+    display: block;
+    z-index: 10000;
 }
 
 .loading_bar {
@@ -189,7 +190,9 @@ nav>ul>li>a {
     animation-name: widthChange;
     animation-timing-function: linear;
     animation-duration: 10s;
-
+    position: absolute;
+    bottom : 0;
+    z-index: 10001;
 }
 
 #services {
@@ -675,6 +678,7 @@ header>input {
     #contactInfo {
         top: 100%;
         right: 50%;
+        width: 100%;
         transform: translate(50%, 0);
         background-color: rgba(92, 173, 211, 0.6);
     }
