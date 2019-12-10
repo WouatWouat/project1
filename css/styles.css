@@ -95,11 +95,11 @@ nav>ul>li>a {
     color: white;
 }
 
-.slider>figure>figcaption>h2 {
+.slider>figure>figcaption>h1 {
     font-size: 26px;
 }
 
-.slider>figure>figcaption>h2>strong {
+.slider>figure>figcaption>h1>strong {
     color: #5cadd3;
 }
 
@@ -215,7 +215,7 @@ nav>ul>li>a {
     max-width: 800px;
 }
 
-#services>.subtitle>h1 {
+#services>.subtitle>h2 {
     font-size: 50px;
     margin: auto;
     margin-top: 50px;
@@ -434,7 +434,7 @@ textarea {
     max-width: 800px;
 }
 
-#projects>.subtitle>h1 {
+#projects>.subtitle>h2 {
     font-size: 50px;
     margin: auto;
     margin-top: 50px;
