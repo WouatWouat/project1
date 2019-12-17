@@ -794,6 +794,7 @@ header>input {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        width: unset;
     }
     #selector>div {
         flex: 0 0 41%;
@@ -819,5 +820,14 @@ header>input {
     }
     .logo{
         padding-left: 0;
+ 
+    }
+    #projects>.subtitle>h2,
+    #services>.subtitle>h2{
+        font-size: unset;
+    }
+    #contactInfo{
+        min-width: unset;
+        min-height: unset;
     }
 }
